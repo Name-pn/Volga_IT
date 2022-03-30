@@ -1,0 +1,3 @@
+C:/Users/Alexandr/CLionProjects/volga/cmake-build-debug/CMakeFiles/volga.dir
+C:/Users/Alexandr/CLionProjects/volga/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alexandr/CLionProjects/volga/cmake-build-debug/CMakeFiles/rebuild_cache.dir
