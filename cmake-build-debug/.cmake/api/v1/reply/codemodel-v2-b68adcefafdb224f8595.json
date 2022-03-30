@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "volga::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-volga-Debug-74963b4de13807f1f078.json",
+					"jsonFile" : "target-volga-Release-0f0e5160c828992c92c6.json",
 					"name" : "volga",
 					"projectIndex" : 0
 				}

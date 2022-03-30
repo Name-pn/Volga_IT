@@ -34,11 +34,6 @@ int main()
 
     matrix<char> tmp = solve(steps, final_type);
 
-
-    write_file(tmp, final_type, steps, std::cout);
-
-    std::cout << "Произвожу записть результата решения в файл\n";
-
     write_file(tmp, final_type, steps, std::cout);
 
     std::fstream f(f_output_name, std::ios::out);
@@ -46,6 +41,8 @@ int main()
     write_file(tmp, final_type, steps, f);
 
     f.close();
+
+    std::cout << "Произведена запись результата решения в файл\n";
 
     getchar();
     return 0;

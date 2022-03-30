@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: volga
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,27 +49,27 @@ cmake_ninja_workdir = C$:/Users/Alexandr/CLionProjects/volga/cmake-build-debug/
 
 build cmake_object_order_depends_target_volga: phony || CMakeFiles/volga.dir
 
-build CMakeFiles/volga.dir/main.cpp.obj: CXX_COMPILER__volga_Debug C$:/Users/Alexandr/CLionProjects/volga/main.cpp || cmake_object_order_depends_target_volga
+build CMakeFiles/volga.dir/main.cpp.obj: CXX_COMPILER__volga_Release C$:/Users/Alexandr/CLionProjects/volga/main.cpp || cmake_object_order_depends_target_volga
   DEP_FILE = CMakeFiles\volga.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++1z
+  FLAGS = -O3 -DNDEBUG -std=gnu++1z
   OBJECT_DIR = CMakeFiles\volga.dir
   OBJECT_FILE_DIR = CMakeFiles\volga.dir
 
-build CMakeFiles/volga.dir/libs/task/fairy_tail.cpp.obj: CXX_COMPILER__volga_Debug C$:/Users/Alexandr/CLionProjects/volga/libs/task/fairy_tail.cpp || cmake_object_order_depends_target_volga
+build CMakeFiles/volga.dir/libs/task/fairy_tail.cpp.obj: CXX_COMPILER__volga_Release C$:/Users/Alexandr/CLionProjects/volga/libs/task/fairy_tail.cpp || cmake_object_order_depends_target_volga
   DEP_FILE = CMakeFiles\volga.dir\libs\task\fairy_tail.cpp.obj.d
-  FLAGS = -g -std=gnu++1z
+  FLAGS = -O3 -DNDEBUG -std=gnu++1z
   OBJECT_DIR = CMakeFiles\volga.dir
   OBJECT_FILE_DIR = CMakeFiles\volga.dir\libs\task
 
-build CMakeFiles/volga.dir/libs/matrix/matrix.cpp.obj: CXX_COMPILER__volga_Debug C$:/Users/Alexandr/CLionProjects/volga/libs/matrix/matrix.cpp || cmake_object_order_depends_target_volga
+build CMakeFiles/volga.dir/libs/matrix/matrix.cpp.obj: CXX_COMPILER__volga_Release C$:/Users/Alexandr/CLionProjects/volga/libs/matrix/matrix.cpp || cmake_object_order_depends_target_volga
   DEP_FILE = CMakeFiles\volga.dir\libs\matrix\matrix.cpp.obj.d
-  FLAGS = -g -std=gnu++1z
+  FLAGS = -O3 -DNDEBUG -std=gnu++1z
   OBJECT_DIR = CMakeFiles\volga.dir
   OBJECT_FILE_DIR = CMakeFiles\volga.dir\libs\matrix
 
-build CMakeFiles/volga.dir/libs/solver/solve.cpp.obj: CXX_COMPILER__volga_Debug C$:/Users/Alexandr/CLionProjects/volga/libs/solver/solve.cpp || cmake_object_order_depends_target_volga
+build CMakeFiles/volga.dir/libs/solver/solve.cpp.obj: CXX_COMPILER__volga_Release C$:/Users/Alexandr/CLionProjects/volga/libs/solver/solve.cpp || cmake_object_order_depends_target_volga
   DEP_FILE = CMakeFiles\volga.dir\libs\solver\solve.cpp.obj.d
-  FLAGS = -g -std=gnu++1z
+  FLAGS = -O3 -DNDEBUG -std=gnu++1z
   OBJECT_DIR = CMakeFiles\volga.dir
   OBJECT_FILE_DIR = CMakeFiles\volga.dir\libs\solver
 
@@ -81,8 +81,8 @@ build CMakeFiles/volga.dir/libs/solver/solve.cpp.obj: CXX_COMPILER__volga_Debug 
 #############################################
 # Link the executable volga.exe
 
-build volga.exe: CXX_EXECUTABLE_LINKER__volga_Debug CMakeFiles/volga.dir/main.cpp.obj CMakeFiles/volga.dir/libs/task/fairy_tail.cpp.obj CMakeFiles/volga.dir/libs/matrix/matrix.cpp.obj CMakeFiles/volga.dir/libs/solver/solve.cpp.obj
-  FLAGS = -g
+build volga.exe: CXX_EXECUTABLE_LINKER__volga_Release CMakeFiles/volga.dir/main.cpp.obj CMakeFiles/volga.dir/libs/task/fairy_tail.cpp.obj CMakeFiles/volga.dir/libs/matrix/matrix.cpp.obj CMakeFiles/volga.dir/libs/solver/solve.cpp.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\volga.dir
   POST_BUILD = cd .

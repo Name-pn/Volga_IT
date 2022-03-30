@@ -10,7 +10,7 @@ const int START_X = PROGRAM_MAP_SIZE / 2 - 1;
 const int START_Y = PROGRAM_MAP_SIZE / 2 - 1;
 
 // Пределы ходов
-const int ELENA_LIM = 50;
+const int ELENA_LIM = 0;
 const int IVAN_LIM = 1000;
 
 // Точка на карте задается двумя координатами x и Y. x - столбец, y - строка
